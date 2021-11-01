@@ -1,0 +1,75 @@
+body {    
+    margin: auto;
+    width: 1024px;
+    min-height: 100vh;
+    font-family: sans-serif;
+    display: grid;
+    grid-template-rows: 100px auto 50px;
+    padding: 0 0;
+}
+
+
+header {
+    grid-area: 1 / 1 / 2 / 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr;
+    background-color: orange;
+}
+nav {
+    grid-area: 1 / 2 / 2 / 6;
+    display: grid;    
+    background-color: rebeccapurple;
+    grid-template-rows: 1fr;
+}
+
+header > h1 {
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: orange;
+    height: 79%;    
+}
+nav > ul {
+    
+    background-color: teal;
+    grid-area: 1 / 2 / 2 / 4; 
+    display: grid;    
+    grid-template-columns: 1fr 1fr 1fr;
+}
+nav > ul > li {
+    list-style: none;
+      display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav > a {    
+    grid-area: 1 / 5 / 2 / 6;
+    text-align: right;
+    padding: 35px 0;
+    background-color: khaki;
+}
+main {
+    grid-area: 2 / 1 / 3 / 3;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+}
+main > h2 {
+    grid-area: 1 / 1 / 2 / 3;
+}
+main > p {
+    grid-area: 2 / 1 / 3 / 3;
+}
+form {
+    grid-area: 1 / 1 / 2 / 2;
+    padding-top: 100px;    
+}
+
+aside {
+    grid-area: 2 / 3 / 3 / 4;
+}
+footer 
+{
+    grid-area: 3 / 1 / 4 / 4;
+    text-align: center;
+}
+ 
