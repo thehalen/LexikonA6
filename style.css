@@ -17,32 +17,32 @@ header {
     background-color: orange;
 }
 nav {
-    grid-area: 1 / 2 / 2 / 6;
+    grid-area: 1 / 2 / 2 / 5;
     display: grid;    
     background-color: rebeccapurple;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
 }
 
-header > h1 {
+h1 {
     grid-area: 1 / 1 / 2 / 2;
-    background-color: orange;
-    height: 79%;    
+    background-color: orange; 
 }
-nav > ul {
-    
+nav > ul {    
     background-color: teal;
-    grid-area: 1 / 2 / 2 / 4; 
-    display: grid;    
+    grid-area: 1 / 1 / 2 / 4; 
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    
 }
 nav > ul > li {
     list-style: none;
-      display: flex;
-  justify-content: center;
+      display: grid;
   align-items: center;
 }
 
-nav > a {    
+header > a {    
     grid-area: 1 / 5 / 2 / 6;
     text-align: right;
     padding: 35px 0;
